@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3e4dc;
+    font-family:"segoe UI" , tahoma, arial, sans-serif;
+    color: #2b2b2b;
+}
+.ticket {
+    width: 340px;
+    max-width: 92vw;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-header{
+    background: #d85a30; 
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+}
+.ticket-header h1 { 
+    margin: 0;
+    font-size: 24px;
+
+}
+.ticket-header h2 {
+    margin: 12px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.welcome {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #fbe3da;
+}
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 24px 20px 16px;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.label {
+    font-size: 12px;
+    color: #777;
+}
+.icon {
+    margin-right: 4px;
+}
+.value {
+    font-size: 17px;
+    font-weight: 600;
+}
+.divider {
+    position: relative;
+    height: 20px;
+    margin: 4px 0;
+    border-top: 2px dashed #ddd;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: -11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f3e4dc;
+}
+.divider::before { left: -10px;}
+.divider::after {right: -10px;}
+
+.ticket-footer {
+    text-align: center;
+    padding: 16px 20px 24px;
+}
+.id-label{
+margin: 0;
+font-size: 12px;
+color: #777;
+}
+.ticket-id {
+    margin: 2px 0 12px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: consolas, monospace;
+}
+.barcode {
+    height: 36px;
+    width: 200px;
+    margin: 0 auto;
+    background: repeating-linear-gradient(
+        90deg,
+        #222 0 3px,
+        transparent 3px 6px,
+        #222 6px 8px,
+        transparent 8px 13px
+    );
+}
+.thanks {
+    margin: 14px 0 0;
+    font-size: 14px;
+    color: #666;
+}
